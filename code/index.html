@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Update</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Học HTML CSS tạo form TOEIC</h2>
+        <div class="form-header">
+            <div class="tab">
+                <label class="tab-label">Certificate</label>
+            </div>
+            <div class="tab-icons">
+                <button class="icon-btn">&#10006;</button>
+                <button class="icon-btn">&#10004;</button>
+            </div>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="certificationName">Certification Name</label>
+                <select id="certificationName">
+                    <option value="TOEIC">TOEIC</option>
+                    <option value="IELTS">IELTS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="certificationAuthority">Certification Authority</label>
+                <input type="text" id="certificationAuthority" value="IIG">
+            </div>
+            <div class="form-group">
+                <label for="licenseNumber">License Number</label>
+                <input type="text" id="licenseNumber">
+            </div>
+            <div class="form-group">
+                <label for="achievedDate">Achieved Date</label>
+                <input type="date" id="achievedDate" name="achievedDate">
+            </div>
+            <div class="form-group">
+                <label for="expiredDate">Expired Date</label>
+                <input type="date" id="expiredDate">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="notExpired">
+                <label for="notExpired">This certificate does not expire</label>
+            </div>
+            <div class="form-group">
+                <label for="score">Score</label>
+                <input type="text" id="score">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="attendanceCertificate">
+                <label for="attendanceCertificate">This is a certificate of attendance</label>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description"></textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="btn save-btn">Save</button>
+                <button type="reset" class="btn reset-btn">Reset</button>
+                <button type="button" class="btn cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
