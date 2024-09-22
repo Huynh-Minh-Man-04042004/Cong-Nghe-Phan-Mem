@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEIC Exam Registration</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h2>TOEIC Exam Registration Form</h2>
+    <form action="/submit" method="POST">
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group gender-container">
+            <label>Gender:</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <!-- TOEIC Test Type -->
+        <div class="form-group">
+            <label for="testtype">Select TOEIC Test Type:</label>
+            <select id="testtype" name="testtype">
+                <option value="listening_reading">Listening & Reading</option>
+                <option value="speaking_writing">Speaking & Writing</option>
+                <option value="combined">Combined Test</option>
+            </select>
+        </div>
+
+        <!-- Test Date -->
+        <div class="form-group">
+            <label for="testdate">Preferred Test Date:</label>
+            <input type="date" id="testdate" name="testdate" required>
+        </div>
+
+        <!-- Previous TOEIC Score -->
+        <div class="form-group">
+            <label for="previousscore">Previous TOEIC Score:</label>
+            <input type="number" id="previousscore" name="previousscore" min="0" max="990">
+        </div>
+
+        <!-- Upload ID Card -->
+        <div class="form-group">
+            <label for="idcard">Upload Your ID Card (PDF or Image):</label>
+            <input type="file" id="idcard" name="idcard" accept=".pdf, .jpg, .png" required>
+        </div>
+
+        <!-- Special Requests -->
+        <div class="form-group">
+            <label for="requests">Special Requests (if any):</label><br>
+            <textarea id="requests" name="requests" rows="4" placeholder="E.g., Disability accommodations"></textarea>
+        </div>
+
+        <!-- Agreement Checkbox -->
+        <div class="form-group inline">
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">I agree to the terms and conditions of the TOEIC exam</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group center">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+
+</body>
+</html>
